@@ -60,5 +60,5 @@ Redux has ~3M weekly downloads vs Mobx ~300K
 
 Use the Application
 ===================
-1 npm install
-2 npm run start:dev (by default application will be served on http://localhost:9000/)
+1. npm install
+2. npm run start:dev (by default application will be served on http://localhost:9000/)
