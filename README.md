@@ -7,7 +7,7 @@ Mobx app development comprises of four fundamental concepts/principles
 
 Application State
 ------------------
-1. You define the state of your application anywhere in your app by the @observable decorator or the observable function, what it means to the mobx is that this state can produce a reaction in future with the help of any action.
+1. You define the state of your application anywhere in your app by the @observable decorator or the observable function, what it means to the mobx is that this state can produce a reaction in future, with the help of any action.
 2. Only action should and will change this state.
 3. This state is mutable on the contrary to Redux, which means anything that is immutable like the JS primitives, should be boxed using mobx utils.
 4. Other DataStructures like array and map should also be boxed inside mobx observables, they will behave like array and map, but will not be your usual JS array/map.
@@ -27,8 +27,8 @@ Reactions
 1. Reactions always reactively triggers a side effect.
 2. Observer is one such reaction, which doesn't produces value, but instead a side effect i.e. flushing a rendering to the DOM. (internally uses autorun)
 For ex: please see Temperature.js file and TemperatureView.js file
-3. In order to make a computed value reactive, in order to make them respond to the state change we have to consume them in a reaction.
-4. When is another such reaction, when triggers a side effect whenever a condition is met.
+3. In order to make a computed value reactive, to make them respond to the state change we have to consume them in a reaction.
+4. 'When' is another such reaction, 'when' triggers a side effect whenever a condition is met.
 For ex: please see store.js file, constructor.
 
 Actions
@@ -53,10 +53,9 @@ MobX: THE BAD
 --------------
 1. The freedom that MobX gives in the form of defining and then updating the state from anywhere in your app, can also be its downside. In large applications if the state is defined and updated from multiple places, it can bring amiguity in the flow of the application (although MobX provides the option for naming your action, which is helpful in debugging).
 2. The biggest downside I felt for MobX was the documentation and community support.
-For ex: To use a computed with arguments MobX documentation https://mobx.js.org/refguide/computed-decorator.html mentions - 
-  import { observable, computed } from "mobx"
-  computedFn is not mentioned in the imports and computedFn is not part of the mobx module but instead mobx-utils.
-Redux has ~3M weekly downloads vs Mobx ~300K
+For ex: To use a computed with arguments MobX documentation (https://mobx.js.org/refguide/computed-decorator.html) mentions - 
+  import { observable, computed } from "mobx", computedFn is not mentioned in the imports and computedFn is part of the mobx-utils module and not mobx module.
+  Redux has ~3M weekly downloads vs Mobx ~300K
 
 Use the Application
 ===================
