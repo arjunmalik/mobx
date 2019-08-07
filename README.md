@@ -55,7 +55,7 @@ MobX: THE BAD
 2. The biggest downside I felt for MobX was the documentation and community support.
 For ex: To use a computed with arguments MobX documentation (https://mobx.js.org/refguide/computed-decorator.html) mentions - 
   import { observable, computed } from "mobx", computedFn is not mentioned in the imports and computedFn is part of the mobx-utils module and not mobx module.
-  Redux has ~3M weekly downloads vs Mobx ~300K
+  Redux has ~3M weekly downloads vs Mobx ~300K.
 
 Use the Application
 ===================
